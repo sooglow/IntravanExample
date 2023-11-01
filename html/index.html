@@ -1,19 +1,78 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/output.css" rel="stylesheet">
-</head>
-<body>
-  <div class="w-full h-screen">
-    <div class="flex flex-col justify-center items-center">
-      <div class="bg-slate-500 w-16 text-white aspect-square flex justify-center items-center mt-14 hover:bg-blue-500">1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-    </div>
-  </div>
-</body>
+<!DOCTYPE html>
+<html class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="w-full h-screen">
+    <header
+      class="py-2 bg-blue-300 sm:py-2 md:py-8 lg:py-12 xl:py-14 2xl:py-16"
+    >
+      <div
+        class="w-full sm:w-full md:w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1200px] mx-auto"
+      >
+        Header
+      </div>
+    </header>
+    <main class="flex-1 bg-gray-200">
+      <div
+        class="px-4 w-full sm:w-full md:w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1200px] mx-auto grid grid-cols-1 gap-12 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 transition-all"
+      >
+        <div
+          class="aspect-square bg-slate-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          01
+        </div>
+        <div
+          class="aspect-square bg-violet-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          02
+        </div>
+        <div
+          class="aspect-square bg-cyan-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          03
+        </div>
+        <div
+          class="aspect-square bg-green-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          04
+        </div>
+        <div
+          class="aspect-square bg-blue-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          05
+        </div>
+        <div
+          class="aspect-square bg-red-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          06
+        </div>
+        <div
+          class="2xl:col-span-2 aspect-square bg-orange-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          07
+        </div>
+        <div
+          class="2xl:col-span-2 aspect-square bg-amber-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          08
+        </div>
+        <div
+          class="lg:col-span-1 xl:col-span-4 2xl:col-span-2 aspect-square bg-yellow-300 flex justify-center items-center font-bold text-lg rounded-2xl shadow-2xl"
+        >
+          09
+        </div>
+      </div>
+    </main>
+    <footer class="py-2 bg-red-300 sm:py-2 md:py-8 lg:py-12 xl:py-14 2xl:py-16">
+      <div
+        class="w-full sm:w-full md:w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1200px] mx-auto"
+      >
+        footer
+      </div>
+    </footer>
+  </body>
 </html>
