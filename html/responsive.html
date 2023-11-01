@@ -2,14 +2,15 @@
 <html class="w-full h-screen">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Insert title here</title>
         <link rel="stylesheet" href="../css/output.css"/>
         <link href="/css/style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
     </head>
-    <body class="w-full h-screen bg-gray-300">
+    <body class="w-full h-screen bg-gray-300 relative">
         <div
-            class="w-full h-screen flex flex-col items-center justify-items-center space-y-8 px-10 py-">
+            class="w-full h-screen flex flex-col items-center absolute justify-items-center space-y-8 px-10 py-">
             <div class="w-full rounded-2xl shadow-xl bg-white text-center p-12">
                 <ul>
                     <li>
@@ -29,29 +30,33 @@
                     </li>
                     <li>
                         <button
-                            class="w-1/3 bg-blue-600 py-4 px-6 text-white rounded-xl hover:bg-blue-900 text-xl">
+                            class=" bg-blue-600 py-4 px-6 text-white rounded-xl  hover:bg-blue-900 text-xl">
                             Checkout
                         </button>
                     </li>
                 </ul>
             </div>
             <div class="w-full rounded-2xl shadow-xl bg-blue-500 ">
-                <div class=" text-white text-left ">
-                    <div class="text-2xl p-14 ">Profile</div>
-                    <div class="w-52 aspect-square rounded-full relative bg-gray-400 mx-auto"></div>
-                    <div class="w-full -mt-20 p-28 rounded-2xl bg-white">
-                        <ul>
-                            <li class="flex justify-between text-black">
-                                <div class="text-xl">Orders<div class="text-center font-semibold">340$</div>
-                                </div>
-                                <div class="text-xl">Spent<div class="text-center font-semibold">340$</div>
-                                </div>
+                <div class="pt-8 rounded-3xl shadow-xl bg-blue-600 flex-col">
+                    <div class="px-8 pb-8 text-white">Profile</div>
+                    <div class="bg-white rounded-3xl py-4">
+                        <ul class="flex flex-row w-full">
+                            <li class="flex-1 text-sm flex flex-col text-center">
+                                Orders
+                                <span class="font-semibold text-black">$340</span>
                             </li>
-                            <li class="text-center text-black mt-28">
-                                <div class="text-xl font-semibold">Tony Molly</div>
-                                <div class="font-medium">미국</div>
+                            <li class="flex-1">
+                                <div class="w-24 aspect-square rounded-full bg-gray-300 -mt-16 mx-auto"></div>
+                            </li>
+                            <li class="flex-1 text-sm flex flex-col text-center">
+                                Spent
+                                <span class="font-semibold text-black">$340</span>
                             </li>
                         </ul>
+                        <div class="text-center flex flex-col py-3">
+                            <span class="text-black font-semibold">Tony Molloy</span>
+                            미국
+                        </div>
                     </div>
                 </div>
             </div>
