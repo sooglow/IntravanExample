@@ -900,6 +900,26 @@ video {
   height: 50%;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
 .min-h-\[900px\] {
   min-height: 900px;
 }
@@ -1014,6 +1034,10 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1552,6 +1576,10 @@ video {
   padding-left: 100px;
 }
 
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1757,12 +1785,37 @@ video {
     grid-column: span 1 / span 1;
   }
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:w-\[1000px\] {
     width: 1000px;
   }
 
+  .lg\:w-\[800px\] {
+    width: 800px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:py-12 {
@@ -1795,12 +1848,64 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .\32xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .\32xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .\32xl\:w-\[1200px\] {
     width: 1200px;
   }
 
+  .\32xl\:w-\[2200px\] {
+    width: 2200px;
+  }
+
+  .\32xl\:w-full {
+    width: 100%;
+  }
+
+  .\32xl\:w-\[2000px\] {
+    width: 2000px;
+  }
+
+  .\32xl\:w-\[1600px\] {
+    width: 1600px;
+  }
+
+  .\32xl\:w-\[1536px\] {
+    width: 1536px;
+  }
+
+  .\32xl\:w-\[1400px\] {
+    width: 1400px;
+  }
+
+  .\32xl\:w-\[100px\] {
+    width: 100px;
+  }
+
+  .\32xl\:w-\[1000px\] {
+    width: 1000px;
+  }
+
+  .\32xl\:w-\[1800px\] {
+    width: 1800px;
+  }
+
   .\32xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .\32xl\:py-16 {
