@@ -1,0 +1,506 @@
+<!doctype html>
+<html class="w-full h-screen">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>하이웨이</title>
+        <link href="/css/output.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+
+    <body class="w-full h-screen">
+        <!--header -->
+        <div class="w-full h-[114px] bg-white">
+            <div class=" w-[1200px] h-[114px] pt-5 mx-auto">
+                <div class="w-1/2 pt-4 float-left">
+                    <img src="/img/logo.jpg">
+                </div>
+                <div class="w-1/2 flex justify-end pt-4 text-[#666666]">
+                    <ul class="flex">
+                        <li class="text-md">
+                            <span>2023. 11. 02 (목)
+                            </span>
+                            <br>
+                            인트라벤 카센터
+                            <span class="font-bold text-black">빵빵빵</span>님
+                        </li>
+                        <li class="pl-[14px]">
+                            <img src="/img/icon_blog.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full h-[34px] bg-[#edf0ff]">
+                <div class="w-[1200px] mx-auto flex justify-end">
+                    <ul class="w-[255px] p-1 pl-3 flex flex-row justify-between font-medium">
+                        <li class="">
+                            <a href="">퀵메뉴 설정</a>
+                        </li>
+                        <li>
+                            <a href="">접속로그</a>
+                        </li>
+                        <li>
+                            <a href="">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header-->
+
+        <!-- body-->
+        <div class="w-full h-[504px] mt-[34px] pt-[36px] bg-[#475be0]">
+            <div class="w-[1200px] ml-[170px]">
+                <div
+                    class="w-[835px] h-[332px] mx-auto my-auto bg-[#333333] rounded-xl border-white border-[1px] flex-1 text-white">
+                    <div class="w-full h-[166px] border-b-2 border-white">
+                        <ul
+                            class="w-full pl-[30px] space-y-11 flex flex-row justify-center items-center text-lg">
+                            <li class="w-1/5 mt-11">매출일지<div class="w-[50px] -mt-10 border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">고객등록<div class="w-[50px] -mt-10 border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">문자메시지<br>발송<div class="w-[50px] -mt-[68px] border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">매출세금
+                                <br>계산서<div class="w-[50px] -mt-[68px] border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">현장용<br>간편 조회<div class="w-[50px] -mt-[68px] border-t-2 border-white"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full h-[166px] border-white">
+                        <ul class="w-full pl-[30px] space-y-10 flex flex-row text-lg">
+                            <li class="w-1/5 mt-10 ">부품 등록<div class="w-[50px] -mt-10 border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">차검사<br>예약관리
+                                <div class="w-[50px] -mt-[68px] border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">예약관리
+                                <div class="w-[50px] -mt-10 border-t-2 border-white"></div>
+                            </li>
+                            <li class="w-1/5">
+                                <div class="w-24 -mt-4 aspect-square rounded-full bg-[#464646] ">
+                                    <p class="flex pt-1 items-center justify-center text-7xl">+</p>
+                                </div>
+                            </li>
+                            <li class="w-1/5">국토부<br>정비전송 조회<div class="w-[50px] -mt-[68px] border-t-2 border-white"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 문자발송-->
+                    <div
+                        class="w-[350px] h-[570px] -mt-[335px] ml-[850px]  bg-white rounded-xl flex flex-row justify-between border-white border-[1px] text-black shadow-xl">
+                        <div class="w-[200px] mt-3 mx-auto">
+                            <p class="text-xl font-semibold">SMS 발송</p>
+                            <div class="mt-[13px]">
+                                <textarea
+                                    class=" w-full h-[190px] overflow-auto border-[#e1e1e1] border-[2px] rounded-lg"></textarea>
+                                <p class="-mt-[6px] text-right">
+                                    <span>1</span>
+                                    /
+                                    <span>80 Byte</span>
+                                    <span class="text-blue-600 font-semibold">SMS</span>
+                                </p>
+                            </div>
+                            <div class="mt-2 text-center">
+                                <div class="w-[95px] float-left">
+                                    <button
+                                        class="w-[95px] h-[30px] bg-[#bababa]  text-white rounded-md hover:bg-[#999999] ">발신번호</button>
+                                </div>
+                                <div class="w-95px">
+                                    <button
+                                        class="w-[95px] h-[30px] bg-[#bababa] m text-white rounded-md hover:bg-[#999999] ">주소록</button>
+                                </div>
+                            </div>
+                            <div class="pt-1 text-[#666666]">
+                                <select class="w-full mt-3 p-[3px] border-[#e1e1e1] border-[1px] rounded-md">
+                                    <option class="hidden " disabled="disabled" selected="selected">보내는사람</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="pt-1">
+                                <input type="checkbox"/>
+                                <label class=" font-semibold">예약발송</label>
+                            </div>
+                            <div class="pt-3 text-[#666666]">
+                                <input
+                                    type="date"
+                                    class="border-[#e1e1e1] border-[1px] rounded-md"
+                                    placeholder="Search"></input>
+                                <select
+                                    class="w-[50px] p-[2px] border-[#e1e1e1] border-[1px] rounded-md float-right">
+                                    <option class="hidden" value="" disabled="disabled" selected="selected"></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div
+                                class="mt-[8px] w-full h-[130px] bg-[#f7faff] flex flex-col rounded-xl overflow-y-scroll">
+                                <div class="mx-auto flex flex-row justify-">
+                                    <input
+                                        type="text"
+                                        class="mt-[9px] border-[#e1e1e1] border-[1px] flex flex-1 focus:outline-none rounded-md"
+                                        placeholder="받는사람 입력"/>
+                                </div>
+                                <div class="mx-auto">
+                                    <input
+                                        type="text flex"
+                                        class="mt-1 border-[#e1e1e1] border-[1px] flex flex-1 focus:outline-none rounded-md"
+                                        placeholder="받는사람 입력"/>
+                                </div>
+                                <div class="mx-auto">
+                                    <input
+                                        type="text"
+                                        class="mt-1 border-[#e1e1e1] border-[1px] flex flex-1 focus:outline-none rounded-md"
+                                        placeholder="받는사람 입력"/>
+                                </div>
+                                <div class="mx-auto">
+                                    <input
+                                        type="text"
+                                        class="mt-1 border-[#e1e1e1] border-[1px] flex flex-1 focus:outline-none rounded-md"
+                                        placeholder="받는사람 입력"/>
+                                </div>
+                                <div class="mx-auto">
+                                    <input
+                                        type="text"
+                                        class="mt-1 border-[#e1e1e1] border-[1px] flex flex-1 focus:outline-none rounded-md"
+                                        placeholder="받는사람 입력"/>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div
+                            class="w-[100px] h-[570px] ml-[10px] bg-[#f7f7f7] shadow-xl rounded-e-xl text-[#666666]">
+                            <div class="text-center ">
+                                <ul
+                                    class="w-[100px] h-[570px] flex flex-col justify-center items-center text-black">
+                                    <li class="h-1/5 border-gra justify-center items-center flex">
+                                        <p>
+                                            정비예약
+                                        </p>
+                                    </li>
+                                    <li class="h-1/5 border-gra font-semibold justify-center items-center flex">
+                                        <p>
+                                            검사예약
+                                        </p>
+                                    </li>
+                                    <li class="h-1/5 border-gra justify-center items-center flex">
+                                        <p>
+                                            업소 위치<br>
+                                            전송
+                                        </p>
+                                    </li>
+                                    <li class="h-1/5 justify-center items-center flex">
+                                        <p>
+                                            발신번호<br>
+                                            등록
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="w-full h-1/5 bg-black rounded-br-xl text-white justify-center items-center flex">
+                                        <p>
+                                            문자발송
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[835px] h-[200px] mt-9 ml-[350px] bg-white shadow-xl rounded-xl">
+                <div class="pt-[30px] w-1/2 h-[200px] float-left">
+                    <div class="ml-6">
+                        <div class="float-left">
+                            <img src="/img/icon_blog.png" class="align-middle">
+                        </div>
+                        <div class="flex flex-row justify-between p-2">
+                            <p class="text-xl font-bold">프로그램 활용팁</p>
+                            <p class="text-xl font-bold pr-[30px]">+</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 ml-6">
+                        <ul >
+                            <li class="pb-2 ">
+                                <p class="font-bold">무료 마켓팅 플랫폼 정비맛집 사용사례</p>
+                            </li>
+                            <li>
+                                <p class="font-thin text-[13px] text-[#666666]">정비맛집 플랫폼을 통해 많은 업체 사장님들이 자신의 정비소<br>
+                                    정보를 꾸며주시고, 예약 및 업소위치 전송 등의 기능을<br>적극적으로 활용하고 계십니다!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-1/2 h-[200px] flex flex-wrap mx-auto ">
+                    <div class="w-1/2 p-5 h-[100px] bg-[#f1f1f1] ">
+                        <p class="font-bold">FAQ</p>
+                        <p class="text-[#666666]">자주 하는 질문</p>
+                        <img src="/img/icon_faq.png" class="float-right -mt-4">
+                    </div>
+                    <div class="w-1/2 p-5 h-[100px] bg-[#fafafa] rounded-tr-xl">
+                        <p class="font-bold">메뉴얼</p>
+                        <p class="text-[#666666]">메뉴얼 다운로드</p>
+                        <img src="/img/icon_manual.png" class="float-right -mt-4">
+                    </div>
+                    <div class="w-1/2 p-5 h-[100px] bg-[#fafafa]">
+                        <p class="font-bold">비대면접수</p>
+                        <p class="text-[#666666]">QR코드 받기</p>
+                        <img src="/img/icon_qr.png" class="float-right -mt-4">
+                    </div>
+                    <div class="w-1/2 p-5 h-[100px] bg-[#f1f1f1] rounded-br-xl">
+                        <p class="font-bold">정비맛집</p>
+                        <p class="text-[#666666]">업소 정보 관리</p>
+                        <img src="/img/icon_jmt.png" class="float-right -mt-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" w-[1200px] h-[200px] mt-36 mx-auto items-center ">
+            <div class="w-[1000px] h-[200px] mx-auto">
+                <ul class="flex flex-row justify-between items-center">
+                    <li>
+                        <img src="/img/banner1.png" class="">
+                    </li>
+                    <li>
+                        <img src="/img/banner2.png" class="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=" w-full h-[200px] mt-3 mx-auto items-center bg-[#f4f4f4]">
+            <div class="w-[1200px] h-[200px] mx-auto">
+                <ul class="pt-[45px] flex flex-row justify-between items-center">
+                    <li
+                        class="w-[245px] h-[110px]  justify-between items-center flex flex-row bg-white rounded-xl px-7">
+                        <div class="w-[125px] ">
+                            <img src="/img/wlogo.png" class="">
+                        </div>
+                        <div class="w-[220px]">
+                            <p class="text-[#666666]">서울</p>
+                            <p class="text-[#666666]">
+                                <span class="text-5xl text-[#666666]">21c</span>&nbsp;&nbsp;맑음</p>
+                        </div>
+                    </li>
+                    <li class="w-[280px] h-[110px] p-4 px-7  rounded-xl bg-white">
+                        <div class="text-lg  font-semibold flex justify-between items-center">
+                            부가서비스
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <p class="text-sm pt-2 text-[#666666]">
+                                업무가 편해지는 스마트한<br>
+                                서비스들을 안내해 드립니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="w-[280px] h-[110px] p-4 px-7 rounded-xl bg-white ">
+                        <div class="text-lg  font-semibold flex justify-between items-center">
+                            연합회 공지사항
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <p class="text-sm pt-2 text-[#666666]">
+                                연합회 공지사항을<br>
+                                확인하실 수 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="w-[350px] h-[110px] rounded-xl p-4 px-7  bg-white">
+                        <div class="text-lg  font-semibold flex justify-between items-center">
+                            원격지원
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <p class="text-sm pt-2 text-[#666666]">
+                                사용상 어려움이나 불편사항을<br>
+                                원격 서비스로 해결해 드립니다.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--footer-->
+            <div class="w-[1200px] h-[100px] mx-auto">
+                <ul class="flex flex-row justify-between items-center pt-5">
+                    <li>
+                        <img src="/img/highlogo.png">
+                    </li>
+                    <li>
+                        <p class="text-sm text-[#666666]">
+                            경기도 하남시 미사대로 520, 현대지식산업센터 한강미사 2차 C동 713호<br>
+                            COPYRIGHT 2023 by INTRAVAN RIGHTS RESERVED. 
+                            &nbsp;<span class="font-semibold float-right text-black">개인정보 처리방침</span>
+                        </p>
+                    </li>
+                    <div class="h-4 border-l-[1px] border-[#e0e0e0]"></div>
+                    <li>
+                        <div class="text-lg flex justify-start">
+                            고객센터
+                            <span class="pl font-bold text-[#4a5aee]">1522-3840</span>
+                        </div>
+                        <p class="text-sm pt-2 text-[#666666]">
+                            평일 09:00 ~ 18:00 / 점심 12:00 ~ 13:00/ 토, 일요일, 공휴일 휴무
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <!--footer-->
+        </div>
+        <!--숨긴메뉴-->
+        <!--
+        <div
+            class="items-center align-middle top-0 bottom-0 left-0 right-0 bg-[#0a66ff] absolute mt-[110px] -pb-[40px] opacity-90">
+            <div class="w-[1200px] h-screen mx-auto">
+                <div class="w-[1200px] min-h-[900px] text-white">
+                       <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">1</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left  pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">2</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">3</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">4</div>
+                        <ul class="pt-5 flex-col  text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">5</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">6</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left  pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">7</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">8</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">9</div>
+                        <ul class="pt-5 flex-col  text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
+                        <div class="w-[100px] border-b-2 mt-[20px] border-white">10</div>
+                        <ul class="pt-5 flex-col text-lg float-left">
+                            <li>매출일지
+                            </li>
+                            <li>고객등록
+                            </li>
+                            <li>매출세금
+                                <br>계산서
+                            </li>
+                            <li">현장용<br>간편 조회
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+          </div>
+          !-->
+          <!--숨긴메뉴-->
+        </body>
+    </html>
