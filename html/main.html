@@ -6,9 +6,10 @@
         <title>하이웨이</title>
         <link href="/css/output.css" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
+        <script src="../js/index.js"></script>
     </head>
 
-    <body class="w-full h-screen">
+    <body id="bodyScroll" class="w-full h-screen">
         <!--header -->
         <div class="w-full h-[114px] bg-white">
             <div class=" w-[1200px] h-[114px] pt-5 mx-auto">
@@ -25,12 +26,12 @@
                             <span class="font-bold text-black">빵빵빵</span>님
                         </li>
                         <li class="pl-[14px]">
-                            <img src="/img/icon_blog.png">
+                            <img onclick='openMenu()' src="/img/icon_blog.png">
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="w-full h-[34px] bg-[#edf0ff]">
+            <div class="w-full h-[34px] bg-[#979696]">
                 <div class="w-[1200px] mx-auto flex justify-end">
                     <ul class="w-[255px] p-1 pl-3 flex flex-row justify-between font-medium">
                         <li class="">
@@ -352,14 +353,13 @@
             <!--footer-->
         </div>
         <!--숨긴메뉴-->
-        <!--
-        <div
-            class="items-center align-middle top-0 bottom-0 left-0 right-0 bg-[#0a66ff] absolute mt-[110px] -pb-[40px] opacity-90">
+        <div id="hideMenu"
+            class="items-center align-middle top-0 bottom-0 left-0 right-0 bg-[#0a66ff] absolute mt-[110px] -pb-[40px] opacity-90 hidden animatorFadeout">
             <div class="w-[1200px] h-screen mx-auto">
                 <div class="w-[1200px] min-h-[900px] text-white">
                        <div class="w-1/5 min-h-[100px] box-content float-left pb-[40px]">
                         <div class="w-[100px] border-b-2 mt-[20px] border-white">1</div>
-                        <ul class="pt-5 flex-col text-lg float-left">
+                        <ul class="pt-5 flex-col text-lg float-left list">
                             <li>매출일지
                             </li>
                             <li>고객등록
@@ -500,7 +500,6 @@
                 </div>
             </div>
           </div>
-          !-->
           <!--숨긴메뉴-->
         </body>
     </html>

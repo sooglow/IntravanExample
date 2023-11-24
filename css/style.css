@@ -25,3 +25,27 @@ body{
   background-color: #888;
   margin: 0 10px;
 }
+.animatorFadein{
+  animation: fadein 1s;
+  animation-fill-mode: forwards;
+}
+.animatorFadeout{
+  animation: fadeout 1s;
+  animation-fill-mode : backwards;
+}
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 0.9;
+  }
+}
+@keyframes fadeout {
+  from {
+      opacity: 0.9;
+  }
+  to {
+      opacity: 0;
+  }
+}
