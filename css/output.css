@@ -688,6 +688,10 @@ video {
   margin-top: 9px;
 }
 
+.mt-\[120px\] {
+  margin-top: 120px;
+}
+
 .box-content {
   box-sizing: content-box;
 }

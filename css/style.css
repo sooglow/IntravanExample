@@ -25,13 +25,14 @@ body{
   background-color: #888;
   margin: 0 10px;
 }
-.animatorFadein{
-  animation: fadein 1s;
+.fadein{
+  animation: fadein .5s;
   animation-fill-mode: forwards;
+  display: block;
 }
-.animatorFadeout{
-  animation: fadeout 1s;
-  animation-fill-mode : backwards;
+.fadeout{
+  animation: fadeout .5s;
+  animation-fill-mode: forwards;
 }
 @keyframes fadein {
   from {
